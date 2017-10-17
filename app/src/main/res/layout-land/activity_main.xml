@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_below="@+id/play_quiz_text"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/earth"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/earth_image"
+        android:layout_weight="0"
+        />
+    <TextView
+        android:id="@+id/play_quiz_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Quiz"
+        android:layout_below="@+id/earth_image"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light" />
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:background="#F8BBD0" >
+   <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:text="1- which of these countries are arab country ?"/>
+</FrameLayout>
+    <CheckBox
+        android:id="@+id/Q_1_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:onClick="Question1"
+    android:text="India"/>
+    <CheckBox
+        android:id="@+id/Q_1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Question1"
+        android:text="Saudi Arabia"/>
+    <CheckBox
+        android:id="@+id/Q_1_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Question1"
+        android:text="Kuwait"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8BBD0" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="2- What is the capital of Egypt?"/>
+    </FrameLayout>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group2"
+        android:orientation="vertical">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q_2_1"
+        android:onClick="Question2"
+        android:text="Rabat"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q_2_2"
+        android:onClick="Question2"
+        android:text="Riyadh"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q_2_3"
+        android:onClick="Question2"
+        android:text="Cairo"/>
+</RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8BBD0" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:text="3- Seoul is the capital of which country?"/>
+</FrameLayout>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group3"
+        android:orientation="vertical">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q_3_1"
+        android:onClick="Question3"
+        android:text="Japan"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q_3_2"
+        android:onClick="Question3"
+        android:text="China"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q_3_3"
+        android:onClick="Question3"
+        android:text="South Korea"/>
+    </RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8BBD0" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:text="4- What country beginning with the letter R ? \n (The biggest country in the world?"/>
+    </FrameLayout>
+    <EditText
+        android:id="@+id/question4_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:paddingBottom="16dp"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:text="5- What is the currency of saudi arabia?"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group5"
+        android:orientation="vertical">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q_5_1"
+        android:onClick="Question5"
+        android:text="Riyal"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q_5_2"
+        android:onClick="Question5"
+        android:text="Dinar"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Q_5_3"
+        android:onClick="Question5"
+        android:text="Dollar"/>
+</RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Submit"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/submit"
+            android:onClick="Reset"
+            android:text="Reset" />
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

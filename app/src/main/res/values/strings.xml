@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">"Country Quiz "</string>
+    <string name="play_quiz">"Play Quiz"</string>
+    <string name="name">"Your Name"</string>
+    <string name="Q1">"1- which of these countries are arab country ?"</string>
+    <string name="India_CB">"India"</string>
+    <string name="Saudi_Arabia_CB">"Saudi Arabia"</string>
+    <string name="Kuwait_CB">"Kuwait"</string>
+    <string name="Q2">"2- What is the capital of Egypt?"</string>
+    <string name="Rabat_RB">"Rabat"</string>
+    <string name="Riyadh_RB">"Riyadh"</string>
+    <string name="Cairo_RB">"Cairo"</string>
+    <string name="Q3">"3- Seoul is the capital of which country?"</string>
+    <string name="Japan_RB">"Japan"</string>
+    <string name="China_RB">"China"</string>
+    <string name="South_Korea_RB">"South Korea"</string>
+    <string name="Q4">"4- What country beginning with the letter R ? \n (The biggest country in the world)"</string>
+    <string name="Country">"Country"</string>
+    <string name="Q5">"5- What is the currency of saudi arabia?"</string>
+    <string name="Riyal_RB">"Riyal"</string>
+    <string name="Dinar_RB">"Dinar"</string>
+    <string name="Dollar_RB">"Dollar"</string>
+
+</resources>
